@@ -6,14 +6,10 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-  let included = false;
   for (let i = 0; i < array.length; i++) {
-    if (array[i] == value) {
-      included = true;
-    } else if (array[i] != value && included == false) {
-    }
+    if (array[i] == value) return true;
   }
-  return included;
+  return false;
 }
 
 // === TEST YOURSELF ===
